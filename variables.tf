@@ -1,3 +1,3 @@
 variable "bucket_name" {
-  default = "nishant-testing-github-action"
+  default = "nishant-testing-github-action-new"
 }
