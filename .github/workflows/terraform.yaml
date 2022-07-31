@@ -65,8 +65,12 @@ jobs:
         shell: bash
 
     steps:
-    - name: echo a string ${{ secrets.TF_API_TOKEN }} , ${{ secrets.SECRET_KEY }}
-      run: echo "This is my first step "
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.ACCESS_KEY }}
+        aws-secret-access-key: ${{ secrets.SECRET_KEY }}
+        aws-region: us-east-1
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
