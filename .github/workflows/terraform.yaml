@@ -65,6 +65,8 @@ jobs:
         shell: bash
 
     steps:
+    - name: echo a string ${{ secrets.TF_API_TOKEN }} , ${{ secrets.SECRET_KEY }}
+      run: echo "This is my first step "
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
