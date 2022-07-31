@@ -1,4 +1,4 @@
-terraform {
+/*terraform {
  backend "remote" {
    # The name of your Terraform Cloud organization.
    organization = "example-organization"
@@ -8,7 +8,7 @@ terraform {
      name = "example-workspace"
    }
  }
-}
+}*/
 #
 #     # An example resource that does nothing.
 resource "null_resource" "example" {
