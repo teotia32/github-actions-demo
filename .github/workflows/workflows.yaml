@@ -11,3 +11,5 @@
           run: |
             node -v
             npm -v
+        - name: Check terraform version
+          run: terraform --version
